@@ -10,47 +10,51 @@ edit_uri: edit/main/docs/
 # Copyright
 copyright: 'Copyright &copy; 2023 - 2024'
 
-
 # Configuration
 theme:
-    name: material
-highlightjs: true
-font:
+  name: material
+  highlightjs: true
+  font:
     text: Roboto
     code: Regular
-palette:
-    scheme: default
 
-# Features  
-features:
-- navigation.instant
-- navigation.tracking
-- navigation.tabs
-- navigation.tabs.sticky
-- navigation.indexes
-- navigation.top
-- toc.follow
+  # Features  
+  features:
+  - navigation.instant
+  - navigation.tracking
+  - navigation.tabs
+  - navigation.tabs.sticky
+  - navigation.indexes
+  - navigation.top
+  - toc.follow
 
-# 404 page
-static_templates:
+  # 404 page
+  static_templates:
     - 404.html
 
-# Search feature
-include_search_page: false
-search_index_only: true
+  # Search feature
+  include_search_page: false
+  search_index_only: true
 
-# Palette and theme (uses personalized colours)
-language: en
-palette:
+  # Palette and theme (uses personalized colours)
+  language: en
+  palette:
     primary: custom
     accent: custom
-icon:
+  icon:
     logo: material/cogs
-    favicon: material/cogs
+  favicon: material/cogs
 
 # Page tree
 nav:
-- Home: index.md
+  - Home: index.md
+  - Data Managemen Plan: Data_Management_Plan.md
+  - Governance & Operations: Governance_Operations.md
+  - FOSS Main Page: https://foss.cyverse.org/
+
+# Theme Extras
+extra_css:
+  - stylesheets/extra.css
 
 # Extra Plugins
 plugins:
@@ -58,46 +62,46 @@ plugins:
     - mkdocstrings
     - git-revision-date
     - mkdocs-jupyter:
-        include_source: True
-        ignore_h1_titles: True
+          include_source: True
+          ignore_h1_titles: True
 
 # Extensions (leave as is)
 markdown_extensions:
-- admonition
-- abbr
-- attr_list
-- def_list
-- footnotes
-- meta
-- md_in_html
-- toc:
-    permalink: true
-    title: On this page
-- pymdownx.arithmatex:
-    generic: true
-- pymdownx.betterem:
-    smart_enable: all
-- pymdownx.caret
-- pymdownx.critic
-- pymdownx.details
-- pymdownx.emoji:
-    emoji_index: !!python/name:materialx.emoji.twemoji
-    emoji_generator: !!python/name:materialx.emoji.to_svg
-- pymdownx.highlight
-- pymdownx.inlinehilite
-- pymdownx.keys
-- pymdownx.magiclink:
-    repo_url_shorthand: true
-    user: squidfunk
-    repo: mkdocs-material
-- pymdownx.mark
-- pymdownx.smartsymbols
-- pymdownx.superfences:
-    custom_fences:
+  - admonition
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
         - name: mermaid
-        class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_code_format
-- pymdownx.tabbed
-- pymdownx.tasklist:
-    custom_checkbox: true
-- pymdownx.tilde
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
